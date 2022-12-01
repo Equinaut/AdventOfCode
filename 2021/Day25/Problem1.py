@@ -2,7 +2,7 @@ grid = []
 #1 = >
 #2 = v
 
-with open("input.txt", "r") as file:
+with open("inputtest.txt", "r") as file:
     for line in file.readlines():
         grid.append([])
         for item in line[:-1]:
