@@ -1,0 +1,1 @@
+print(sum([ord(l[2])-87+((ord(l[2])-ord(l[0])-1)%3)*3 for l in open("input.txt")]))

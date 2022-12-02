@@ -1,0 +1,1 @@
+print(sum([(ord(l[0])+ord(l[2])-1)%3+3*ord(l[2])-263 for l in open("input.txt")]))
