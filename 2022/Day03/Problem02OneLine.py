@@ -1,0 +1,1 @@
+print(sum([(lambda l:(lambda c:c if c>0 else c+58)(ord((lambda x,y,z:list(set(x).intersection(y).intersection(z))[0])(l[0].strip(),l[1].strip(),l[2].strip()))-96))(m) for m in (lambda f:[f[i:i+3] for i in range(0, len(f), 3)])(open("input.txt").read().strip().split("\n"))]))
