@@ -1,0 +1,1 @@
+print(sum([1 if (lambda r,s:(r[0]>=s[0] and r[1]<=s[1]) or (s[0]>=r[0] and s[1]<=r[1]))(*((int(pair.split("-")[0]), int(pair.split("-")[1])) for pair in line.split(","))) else 0 for line in open("input.txt")]))
