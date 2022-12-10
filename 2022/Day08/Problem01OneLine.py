@@ -1,0 +1,1 @@
+print((lambda w,g:sum([1 for c in g if (lambda x,y: (lambda v:(all([g[i,y]<v for i in range(0,x)]) or all([g[x,j]<v for j in range(0,y)]) or all([g[i,y]<v for i in range(x+1,w)]) or all([g[x,j]<v for j in range(y+1,w)])))(g[(x,y)]))(*c)]))(len(l:=open("input.txt").readlines()),{(i,j):int(h) for j,m in enumerate(l) for i,h in enumerate(m[:-1])}))
