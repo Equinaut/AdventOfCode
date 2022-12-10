@@ -1,0 +1,1 @@
+print((lambda n,t:next(p for i in range(len(t)-n+1) if len(set(t[i:(p:=i+n)]))==n))(4,open("input.txt").read()))
